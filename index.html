@@ -1,192 +1,1776 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="google" content="notranslate" />
-	<link rel="shortcut icon" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
-	<link rel="icon" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="bookmark" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
-	<title>桃色幸運草Z：2009 -舟車苦行-</title>
-	<meta name="author" content="台灣武士 Gary Hsu">
-	<meta name="description" content="桃色幸運草Z">
-	<meta name="keywords" content="桃色幸運草Z,桃色幸運草,桃色四葉草Z,桃色四葉草,桃色幸福草Z,桃色幸福草,桃草Z,桃草,台灣桃草武士,桃草武士,武士,武士團,台灣桃草武士團,桃草武士團">
-	<meta property="og:site_name" content="桃色幸運草Z" />
-	<meta property="og:title" content="桃色幸運草Z：2009 -舟車苦行-" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="桃色幸運草Z" />
-	<meta property="og:url" content="https://garymomo2009.github.io/" />
-	<!-- <meta property="og:image" content="" /> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="google" content="notranslate" />
+  <link rel="shortcut icon" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="icon" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="bookmark" href="image/icon/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>桃色幸運草Z：穿越 -2009剪影-</title>
+  <meta name="author" content="台灣武士 Gary Hsu" />
+  <meta name="description" content="桃色幸運草Z" />
+  <meta name="keywords" content="桃色幸運草Z,桃色幸運草,桃色四葉草Z,桃色四葉草,桃色幸福草Z,桃色幸福草,桃草Z,桃草,台灣桃草武士,桃草武士,武士,武士團,台灣桃草武士團,桃草武士團,ももいろクローバーZ,ももクロ,ももいろクローバー" />
+  <meta property="og:site_name" content="桃色幸運草Z" />
+  <meta property="og:title" content="桃色幸運草Z：穿越 -2009剪影-" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="桃色幸運草Z" />
+  <meta property="og:url" content="https://garymomo2009.github.io/" />
+  <!-- <meta property="og:image" content="" /> -->
 
-	<script src="js/general/custom/head.js"></script>
-	<script src="js/general/custom/main.js"></script>
-	<script src="js/general/custom/footOp.js"></script>
+  <script src="js/general/custom/head.js"></script>
+  <script src="js/general/custom/main.js"></script>
+  <script>
+	$(document).ready(function() {
+		$('#filter1').val('');
+		$('#filter2').val('');
+		var dtable = $('#cus-table').DataTable({
+			"autoWidth": false,
+			"dom": "lfriptip",
+			"lengthMenu": [ 10, 30, 60 ],
+			"pageLength": 30,
+			"order": [[ 1, "desc" ]],
+			"columnDefs": [
+				{ "targets": [2, 3], "orderable": false }
+			],
+			"columns": [
+				{ "width": "5%" },
+				{ "width": "5%" },
+				{ "width": "80%" },
+				{ "width": "10%" }
+			],
+			"language": {
+				"lengthMenu": "一次顯示 _MENU_ 筆數",
+				"zeroRecords": "本次查詢查無相關資料",
+				"info": "當前為第 _PAGE_ 頁，最多 _PAGES_ 頁",
+				"infoEmpty": "查無相關資料",
+				"infoFiltered": "",
+				"search": "本次查詢：",
+				"paginate": {
+					"next": "下頁",
+					"previous": "前頁"
+				}
+			}
+		});
+		$('#filter1').on('change', function() {
+			var fv1 = $(this).val();
+			dtable.column(1).search(fv1).draw();
+		});
+		$('#filter2').on('change', function() {
+			var fv2 = $(this).val();
+			dtable.column(0).search(fv2).draw();
+		});
+	});
+  </script>
 </head>
-<body>
-	<div id="top"></div>
-
-	<script src="js/general/custom/nav.js"></script>
-	<div class="loader"></div>
-	<div class="fullContain">
-		<div class="mainContain">
-			<div class="row">
-				<div class="col-xs-12 tags">
-					<div class="row">
-						<div class="col-xs-4 live tags-item" id="tags-live">
-							<div><span class="glyphicon glyphicon-music"></span></div>
-							<p>找LIVE</p>
-						</div>
-						<div class="col-xs-4 music tags-item" id="tags-music">
-							<div><span class="glyphicon glyphicon-cd"></span></div>
-							<p>找音樂作品</p>
-						</div>
-						<div class="col-xs-4 dvdbd tags-item" id="tags-dvdbd">
-							<div><span class="glyphicon glyphicon-facetime-video"></span></div>
-							<p>找影像作品</p>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-xs-4 book tags-item" id="tags-book">
-							<div><span class="glyphicon glyphicon-book"></span></div>
-							<p>找書籍雜誌</p>
-						</div>
-						<div class="col-xs-4 tvshow tags-item" id="tags-tvshow">
-							<div><span class="glyphicon glyphicon-sunglasses"></span></div>
-							<p>找電視演出</p>
-						</div>
-						<div class="col-xs-4 radiosign tags-item" id="tags-radiosign">
-							<div><span class="glyphicon glyphicon-signal"></span></div>
-							<p>找廣播演出</p>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-xs-4 movie tags-item" id="tags-movie">
-							<div><span class="glyphicon glyphicon-film"></span></div>
-							<p>找電影演出</p>
-						</div>
-						<div class="col-xs-4 network tags-item" id="tags-network">
-							<div><span class="glyphicon glyphicon-globe"></span></div>
-							<p>找網路相關</p>
-						</div>
-						<div class="col-xs-4 anime tags-item" id="tags-anime">
-							<div><span class="glyphicon glyphicon-fire"></span></div>
-							<p>找動漫相關</p>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-xs-4 game tags-item" id="tags-game">
-							<div><span class="glyphicon glyphicon-knight"></span></div>
-							<p>找遊戲相關</p>
-						</div>
-						<div class="col-xs-4 other tags-item" id="tags-other">
-							<div><span class="glyphicon glyphicon-user"></span></div>
-							<p>找其他活動</p>
-						</div>
-						<div class="col-xs-4 all tags-item" id="tags-all">
-							<div><span class="glyphicon glyphicon-eye-open"></span></div>
-							<p>全部列表</p>
-						</div>
-					</div>
-					<br>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-6 actions" id="collapseParent">
-					<div class="datatime colorControl" id="month12">十二月</div>
-					<div class="datatime colorControl" id="month11">十一月</div>
-					<div class="datatime colorControl" id="month10">十月</div>
-					<div class="datatime colorControl" id="month9">九月</div>
-					<div class="datatime colorControl" id="month8">八月</div>
-					<div class="datatime colorControl" id="month7">七月</div>
-					<div class="items it-momoclo-red panel items-member" id="it902">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：7月12日</p>
-						<h3 class="items-head"><b>百田夏菜子</b></h3>
-					</div>
-					<div class="datatime colorControl" id="month6">六月</div>
-					<div class="items it-momoclo-purple panel items-member" id="it900">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：6月21日</p>
-						<h3 class="items-head"><b>高城蕾妮</b></h3>
-					</div>
-					<div class="items it-momoclo-pink panel items-member" id="it898">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：6月11日</p>
-						<h3 class="items-head"><b>佐佐木彩夏</b></h3>
-					</div>
-					<div class="items it-momoclo-yellow panel items-member" id="it896">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：6月4日</p>
-						<h3 class="items-head"><b>玉井詩織</b></h3>
-					</div>
-					<div class="datatime colorControl" id="month5">五月</div>
-					<div class="items it-momoclo-all panel items-member" id="it895">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：5月17日</p>
-						<h3 class="items-head"><b>桃色幸運草</b></h3>
-					</div>
-					<div class="datatime colorControl" id="month4">四月</div>
-					<div class="datatime colorControl" id="month3">三月</div>
-					<div class="items it-momoclo-blue panel items-member" id="it901">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：3月17日</p>
-						<h3 class="items-head"><b>早見朱莉</b></h3>
-					</div>
-					<div class="items it-momoclo-green panel items-member" id="it894">
-						<h1 class="items-head"><b>生日快樂</b></h1>
-						<p class="items-head">日期：3月15日</p>
-						<h3 class="items-head"><b>有安杏果</b></h3>
-					</div>
-					<div class="datatime colorControl" id="month2">二月</div>
-					<div class="datatime colorControl" id="month1">一月</div>
-				</div>
-				<div class="col-xs-5 col-xs-offset-1 actions">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12" id="special-info">
-					<p>
-						<b>
-							部分資料參考來源
-							<a href="http://www.momoclo.net/" target="_blank">『官網』</a>
-							、
-							<a href="http://momoclozamurai.xxxblog.jp" target="_blank">『ももクロ侍』</a>
-							、
-							<a href="http://momoirocloverz.blog.fc2.com/" target="_blank">『ももクロちゃんはじめました。』</a>
-							、『台灣桃草武士團』
-						</b>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-option">
-			<p class="anchor1 back-to"><a href="#top" title="回上層"><b>回上層</b></a></p>
-			<p class="anchor2 back-to">
-				<span class="option-lr glyphicon glyphicon-minus-sign"></span>
-				<span id="datatimeNum">1</span><b>月</b>
-				<span class="option-lr glyphicon glyphicon-plus-sign"></span>
-				<span class="glyphicon glyphicon-search"></span>
-			</p>
-			<p class="anchor3 back-to"><a href="https://garymomoindex.github.io/?visit=true" title="回首頁"><b>回首頁</b></a></p>
-
-			<figure>
-				<img src="image/general/icon/videoGear.png" title="收起">
-			</figure>
-		</div>
-
-		<footer>
-			<div class='momofoot'>
-				&nbsp;
-				<br/>桃色幸運草Z台灣武士製作
-				<br/>建議使用IE11（含）以上或Chrome瀏覽器以達最佳瀏覽效果
-				<br/>本頁圖片來源：<a href="https://natalie.mu/" target="_blank">natalie</a>與網路搜尋
-			</div>
-		</footer>
-	</div>
+<body class="momo-bk-color-black momo-font-family">
+  <script src="js/general/custom/nav.js"></script>
+  <div class="loader"></div>
+  <div class="container-fluid d-flex flex-column min-vh-100">
+    <div class="row justify-content-center mt-5">
+      <div class="col-11 mt-5 text-break">
+        <div class="row momo-filter">
+          <div class="col-12">
+            <label for="filter1">月份：</label>
+            <select id="filter1">
+              <option value="">All</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label for="filter2" class="ml-3">分類：</label>
+            <select id="filter2">
+              <option value="">All</option>
+              <option value="活動">活動</option>
+              <option value="動畫">動畫</option>
+              <option value="電影">電影</option>
+              <option value="戲劇">戲劇</option>
+              <option value="廣告">廣告</option>
+              <option value="合作">合作</option>
+              <option value="節目">節目</option>
+              <option value="音樂">音樂</option>
+              <option value="遊戲">遊戲</option>
+              <option value="事件">事件</option>
+              <option value="廣播">廣播</option>
+              <option value="書報">書報</option>
+              <option value="影像">影像</option>
+              <option value="網路">網路</option>
+              <option value="交流">交流</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-11 text-break">
+        <table class="stripe hover" id="cus-table">
+          <thead class="font-weight-bold momo-weight-color colorControl">
+            <tr>
+              <th>分類</th>
+              <th>月份</th>
+              <th>內容</th>
+              <th>備註</th>
+            </tr>
+          </thead>
+          <tbody class="font-weight-bold">
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【3B juniorの「待ち合わせは原宿で！！」】</p>
+                <p class="table-content-title p-2 mx-2 rounded">【第一回凌晨桃草（第一回早朝ももクロ）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．原宿ベルエポック美容専門学校</p>
+                <p>【第一回凌晨桃草（第一回早朝ももクロ）】是為了補償先前成員因病缺席的握手、簽名與悄悄話活動，並且時間辦在早上6點開始</p>
+                <p>其中【瀧本美織】分別與百田夏菜子、高城蕾妮、有安杏果、早見朱莉一起參與【3B juniorの「待ち合わせは原宿で！！」】同組的握手會</p>
+                <p class="table-content-sub text-info">2010年【3B juniorのたまらないビデオ ～キラキラ編～】DVD發行</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1703" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://www.amazon.co.jp/dp/B00AUDSELE/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">星塵【3B junior BOOK 2010 winter】，內含桃色幸運草成員介紹</p>
+                <hr class="table-content-extra-line-ext">
+                <p>同月【「3B junior BOOK 2010 winter」発売記念イベント】於【東京．リブロ池袋本店】舉辦握手會</p>
+                <p>內容亦包含【瀧本美織】【小松菜奈】與桃草武士【新木優子】等收錄，其中桃草武士【新木優子】、百田夏菜子、玉井詩織有參與到同一場握手會</p>
+                <p class="table-content-sub text-info">2010年【3B juniorのたまらないビデオ ～キラキラ編～】DVD發行</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/4863360770/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://www.amazon.co.jp/dp/B00AUDSELE/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「スタ☆どん」】星塵節目</p>
+                <hr class="table-content-extra-line-ext">
+                <p>桃色幸運草參與節目單元</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000051738" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スタ☆フェス vol.008】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸ソフト本店</p>
+                <p>由高城蕾妮登場負責扮演聖誕老人</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1587" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">桃色幸運草官方社群【MySpace】開設</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://natalie.mu/music/news/24716" target="_blank" class="btn btn-outline-momo-color btn-sm colorControl" role="button" title="Site">Site&nbsp;&#9752;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【週刊女性 12/8号】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1563" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>12月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【サムライちゃんねる「ちょっとバタバタしてまして：シーズン2」】桃色幸運草登場</p>
+                <hr class="table-content-extra-line-ext">
+                <p>與狗勾【ユウジロウ】一起參與主持，開始播放（2009年11月～2010年6月）</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1671" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【家電フェア 2009 &amp; 大処分蚤の市 in グリーンドーム前橋】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：群馬．グリーンドーム前橋</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1548" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1554" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【NO LIFE TV「KIRA KIRA JAPON」】桃色幸運草登場</p>
+                <hr class="table-content-extra-line-ext">
+                <p>法國製作的節目</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000055454" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【新秋巨人系列 啦啦啦延長戰！！（新秋ジャイアントシリーズ ら．ら．ら延長戦！！）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：埼玉．ららぽーと新三郷</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1519" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">佐佐木彩夏因遭球擊造成右手大拇指骨折</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1514" target="_blank" class="btn btn-outline-momo-color btn-sm colorControl" role="button" title="Site">Site&nbsp;&#9752;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【新秋巨人Tour延長戰 ～粉絲感謝祭～（新秋ジャイアントツアー延長戦 ～ファン感謝祭～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸ソフト本店、東京．東武百貨店池袋店</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1513" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1524" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「スタ☆どん」】星塵節目</p>
+                <hr class="table-content-extra-line-ext">
+                <p>桃色幸運草參與節目單元</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000051738" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【最終公演】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．ベルサール秋葉原</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1476" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【goomo「桃草心跳加速初體驗日記！（ももクロドッキドキ初体験日記！）」】桃色幸運草登場</p>
+                <hr class="table-content-extra-line-ext">
+                <p>成為【ヤマダ電機】家電招牌活動實習生的嚴苛修行，開始播放（2009年11月）</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1497" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1508" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://ja.wikipedia.org/wiki/Goomo" target="_blank" class="btn btn-outline-dark btn-sm" role="button" title="Wiki">Wiki&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>音樂</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">單曲【朝未來前進！（未来へススメ！）】販售</p>
+                <hr class="table-content-extra-line-ext">
+                <p>同月【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】於【東京．石丸ソフト本店】舉辦面交與小型演唱活動</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://garymomo2009.github.io/music?item=b3" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://www.barks.jp/news/?id=1000055220" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://youtu.be/_RdImSQicE8" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃色幸運草2nd CD展售活動 ～每日都能相見的偶像～「春惠商店」（ももいろクローバー 2nd CD即売イベント ～いま会えるアイドルに毎日会える～「はるえ商店」）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原宝田中央通りビル</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1434" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1453" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1461" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【週刊プレイボーイ No.47】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B007Q5O1E8" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1433" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【サムライちゃんねる「ちょっとバタバタしてまして：シーズン2」】桃色幸運草登場</p>
+                <hr class="table-content-extra-line-ext">
+                <p>與狗勾【ユウジロウ】一起參與主持，開始播放（2009年11月～2010年6月）</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1671" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://ja.wikipedia.org/wiki/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%83%90%E3%82%BF%E3%83%90%E3%82%BF%E3%81%97%E3%81%A6%E3%81%BE%E3%81%97%E3%81%A6" target="_blank" class="btn btn-outline-dark btn-sm" role="button" title="Wiki">Wiki&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【「石丸電気はおひさしぶりライブ ～クリィミー．パフェとご一緒～」～スタ☆フェス vol.007～】</p>
+                <p class="table-content-title p-2 mx-2 rounded">【桃☆FES IN 石丸電氣（もも☆フェス IN 石丸電気）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸ソフト本店</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1414" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>11月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃草AKBA四回合試煉對抗：第二回（ももクロAKBA試練の四番勝負：2回目）】，含【ニコニコ生放送】直播</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【『one for all all for one』～我為人人，人人為我～ 桃草AKBA四回合試煉對抗：第三、四回（『one for all all for one』～ひとりはみんなのために みんなはひとりのために～ ももクロAKBA試練の四番勝負：3、4回目）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原UDXシアター</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1404" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1426" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1431" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃草AKBA四回合試煉對抗：第一回（ももクロAKBA試練の四番勝負：1回目）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原UDXシアター</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1400" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃草傳：前篇、後篇（ももくろ白書：前編、後編）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：埼玉．ららぽーと新三郷、東京．アムラックス東京</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1361" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1365" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【たかさき雷舞フェスティバル】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：群馬．LABI1高崎、高崎駅東口</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1324" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「スタ☆どん」】星塵節目</p>
+                <hr class="table-content-extra-line-ext">
+                <p>桃色幸運草參與節目單元</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000051738" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃色幸運草大冒險王 ～帶我前往彩虹橋～（ももいろクローバー大冒険王 ～私をレインボーブリッジに連れてって～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．デックス東京ビーチ</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1319" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【下北FM「DJ Tomoaki's Radio Show！」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1307" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">【嶄露頭角☆第一集「釣魚傻蛋日記」☆（路地裏からこんにちは☆第一話「釣りバカ日誌」☆）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原の路地</p>
+                <p>學力對抗：第一名早見朱莉，最後一名有安杏果</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1285" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【AKBA桃草大型運動鑑測對抗賽 ～鄰里最強～（AKBAももクロ対抗大運動測定会 ～そして路地裏へ～）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原UDXシアター</p>
+                <p>1. 背肌力：高城蕾妮 → 百田夏菜子 → 早見朱莉與佐佐木彩夏 → 有安杏果 → 玉井詩織</p>
+                <p>2. 站立前彎：早見朱莉 → 有安杏果 → 高城蕾妮 → 佐佐木彩夏 → 玉井詩織 → 百田夏菜子</p>
+                <p>3. 握力：早見朱莉 → 高城蕾妮 → 百田夏菜子 → 佐佐木彩夏 → 玉井詩織 → 有安杏果</p>
+                <p>4. 伏地上身後仰：百田夏菜子 → 佐佐木彩夏 → 早見朱莉 → 高城蕾妮 → 玉井詩織 → 有安杏果</p>
+                <p>鑑測結果：早見朱莉 → 高城蕾妮 → 百田夏菜子 → 佐佐木彩夏 → 有安杏果 → 玉井詩織，由玉井詩織、佐佐木彩夏、有安杏果組成【運動音痴組（うんちっちーず）】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1281" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【こうふタウンファンタジー 2009】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：山梨．甲府中央商店街</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1274" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>10月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草'09 新秋巨人系列（ももいろクローバー'09 新秋ジャイアントシリーズ）】</p>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【令人著迷的仙境 in AMLUX東京「桃色歷險」（魅惑のワンダーランド in アムラックス東京「ももいろアドベンチャー」）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．トヨタオートサロン アムラックス東京</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1238" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【家電フェア 2009 &amp; 大処分蚤の市 in 札幌ドーム】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：北海道．札幌ドーム</p>
+                <p>順便跑去【北海道グリーンランド】遊玩</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1178" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>網路</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【美人時計】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.dreamnews.jp/press/0000009633/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1151" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃色幸運草 CHAMPION CARNIVAL AKBA 5DAYS（ももいろクローバー CHAMPION CARNIVAL AKBA 5DAYS）】，含【ニコニコ生放送】直播</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．秋葉原UDXシアター</p>
+                <p>首日播放了【布蘭詩歌】BGM結合桃草與【Michael Jackson】的開場影片</p>
+                <p>第二日，2009年09月20日決定了成員永遠的代表色</p>
+                <p>最終日第一次付費演唱活動完售</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1161" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1127" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「スタ☆どん」】星塵節目</p>
+                <hr class="table-content-extra-line-ext">
+                <p>桃色幸運草參與節目單元</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000051738" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【名古屋テレビ「バグルー！！」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1049" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【福岡ソフトバンクホークス vs 埼玉西武ライオンズ】日職開場表演嘉賓</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：福岡．福岡ヤフードーム</p>
+                <p>【ヤマダ電機】提攜</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1009" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【天神FM「Park Side Cafe Friday」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1005" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【ヤンヤン Vol.8】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/4197202792" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>09月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【Cupop 2009冬号】，內含早見朱莉參與拍攝</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=1380" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【週刊プレイボーイ No.37】，內含百田夏菜子與早見朱莉介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B007OYX9MQ" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス 番外編 ～「スタ☆コレ」リリース記念祭～ supported by Lantis】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．原宿ベルエポック美容専門学校</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=962" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【熱海花火大会LIVE 2009】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：静岡．熱海親水公園</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=949" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【啦啦寶都柏之葉（ららぽーと柏の葉）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：千葉．ららぽーと柏の葉</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=839" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【GO！SHIODOMEジャンボリー ワッショイ！2009「スタ☆フェス納涼祭」】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．日本テレビ</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=817" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃☆FES vol.001（もも☆フェス vol.001）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸ソフト本店</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=794" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「スタ☆フェス ～週末ヒロインたちの夏～」】星塵節目</p>
+                <hr class="table-content-extra-line-ext">
+                <p>桃色幸運草參與節目單元</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://natalie.mu/music/gallery/news/19518/27936" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【コミックマーケット 76】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．東京国際展示場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=786" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【CBCラジオ「ハイパーナイト．ナガオカ」】桃色幸運草登場</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td><p>音樂</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">出道單曲【桃色拳擊（ももいろパンチ）】販售</p>
+                <hr class="table-content-extra-line-ext">
+                <p>於【東京．石丸ソフト本店】舉辦面交與握手會</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://garymomo2009.github.io/music?item=b2" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://natalie.mu/music/news/19518" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://youtu.be/8ewQ1PN-Y2A" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス 番外編 vol.2】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．SHIBUYA BOXX</p>
+                <p>首次翻唱團體【m.o.v.e】的【words of the mind -brandnew journey-】與團體【mihimaru GT】的【更加堅強（ツヨクツヨク）】</p>
+                <p>【words of the mind -brandnew journey-】也是有安杏果向【Michael Jackson】致敬的經典橋段：手套配備與月球漫步演出</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=723" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=725" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【SDP Bunko ☆百田夏菜子．早見朱莉簽名會☆（SDP Bunko ☆百田夏菜子．早見朱莉サイン会イベント☆）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：千葉．ミハマニューポートリゾート</p>
+                <p>佐佐木彩夏在最後戴著黑帽子扮演【阿玲．Jackson】，隨著【Billie Jean】BGM將手套交給了有安杏果，為【スタ☆フェス 番外編 vol.2】活動埋下伏筆，未來有安杏果經典橋段也因此誕生</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=692" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=710" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>08月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【山田電機Presents ～桃色幸運草JAPAN Tour 2009 桃色Typhooooon!～（ヤマダ電機Presents ～ももいろクローバーJAPANツアー 2009 ももいろTyphooooon!～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．テックランドNew八王子別所店、東京．LABI渋谷、東京．SHIBUYA BOXX、東京．LABI品川大井町、東京．LABI池袋、大阪．LABI1なんば、愛知．テックランド星ヶ丘店、千葉．テックランドNew幕張本店、神奈川．テックランドNew港北センター本店、神奈川．テックランド川崎店、北海道．テックランド札幌本店</p>
+                <p>在【神奈川．テックランド川崎店】發生忘記帶照明設備，使用車大燈的克難演出</p>
+                <p>有安杏果在【北海道．テックランド札幌本店】開始在【words of the mind -brandnew journey-】時將手套丟向觀眾</p>
+                <p>本月結束全國40地104場公演</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://deview.co.jp/Interview?am_interview_id=209" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=798" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">百田夏菜子擔任【SDP Bunko 夢】封面拍攝</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/4903620638" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス vol.006】，以及有安杏果的新加入</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸ソフト本店</p>
+                <p>有安杏果以紙箱裝箱登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=653" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=656" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【Vivitto 8月号】【山梨日日新聞】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=422" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【第14回新橋こいち祭】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．新橋SL広場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=651" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【フジテレビ動画コンテンツ「つか金フライデーX」】【中部日本放送「IMPACT」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=647" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>音樂</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">單曲【Dream Wave】謝罪限定發送</p>
+                <hr class="table-content-extra-line-ext">
+                <p>因單曲【桃色拳擊（ももいろパンチ）】延期發售，於2場【東京．LABI渋谷】的【山田電機Presents ～桃色幸運草JAPAN Tour 2009 桃色Typhooooon!～（ヤマダ電機Presents ～ももいろクローバーJAPANツアー 2009 ももいろTyphooooon!～）】謝罪限定發送</p>
+                <p>原本只有無人聲版，後來改發送人聲音源版。</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://garymomo2009.github.io/music?item=b1" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=633" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【岩手めんこいテレビ「BEATNIKS」】桃色幸運草留言登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=530" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【テレビ岩手「ねだらX」】桃色幸運草VTR登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=576" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【週刊プレイボーイ No.30】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B007L1TW28" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=573" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【山田電機Presents ～桃色幸運草JAPAN Tour 2009 桃色Typhooooon!～（ヤマダ電機Presents ～ももいろクローバーJAPANツアー 2009 ももいろTyphooooon!～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：京都．テックランド京都吉祥院店、大阪．LABI1なんば、広島．テックランドアルパーク前店、福岡．テックランド博多本店、兵庫．テックランド神戸本店、東京．LABI渋谷、東京．LABI品川大井町、東京．LABI池袋、東京．LABI新橋デジタル館、東京．LABI秋葉原パソコン館、千葉．LABI津田沼</p>
+                <p>高城蕾妮在【広島．テックランドアルパーク前店】扮演華人知名演員【周潤發】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.barks.jp/news/?id=1000051576" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=617" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>07月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【MBSラジオ「上泉雄一のええなぁ」「MBSうたぐみ Smile × Songs」】【ラジオ関西「王様ラジオキッズ」】【広島エフエム「庄司悟のリクエスト魂」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=540" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=543" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=604" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【YBSラジオ「Talk魂765 GO！GO！イチ」】【FM富士「WESTSIDE TOKYO」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=443" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=445" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【静岡朝日テレビ「とびっきり！しずおか」】百田夏菜子登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=423" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【ch FILES 7月号】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=422" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>節目</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【スカパー！「アイドル"独断と偏見"情報局」】MV【桃色拳擊（ももいろパンチ）】登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=330" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+                <p>MV</p>
+                <p>
+                  <a href="https://youtu.be/L5w6Q7TeLSE" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【エフエム岩手「Do you！？」「MAX WAVESCAPE」】【ラヂオもりおか「FRIDAY POWER SESSION 2ND Half」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=386" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=391" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>網路</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【OCN 電脳サブカルマガジンOG 第34号】，內含早見朱莉介紹</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【飛鳥凛「ラストメール」DVD-BOX発売記念イベント】開場演唱嘉賓</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT2</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.oricon.co.jp/news/66742/full/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【山田電機Presents ～桃色幸運草JAPAN Tour 2009 桃色Typhooooon!～（ヤマダ電機Presents ～ももいろクローバーJAPANツアー 2009 ももいろTyphooooon!～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：茨城．LABI水戸、東京．LABI品川大井町、愛知．ナゴヤドーム、岩手．テックランドNew盛岡本店、宮城．LABI仙台、山梨．テックランド山梨本店、静岡．テックランド浜松中央店</p>
+                <p>其中愛知2場跟著【ヤマダ電機 家電フェア】於ナゴヤドーム舉辦</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.yamada-denki.jp/information/kadenfair/2009/kaden2009_maebashi/09_maebashi.pdf" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=368" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>06月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【新潟WEEK！】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=422" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【FREE WAVE77.7「MORNING WAVE」「PARK SIDE CAFE」】桃色幸運草登場</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【山田電機Presents ～桃色幸運草JAPAN Tour 2009 桃色Typhooooon!～（ヤマダ電機Presents ～ももいろクローバーJAPANツアー 2009 ももいろTyphooooon!～）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：群馬．LABI1高崎、栃木．テックランド宇都宮本店、千葉．LABI津田沼</p>
+                <p>開始【ETC偶像】【山田電機偶像】【家電偶像】自稱</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://www.shikoku-np.co.jp/national/culture_entertainment/20090611000342" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=252" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【Kindai 7月号】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B0027VQUMC/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【桃色幸運草 1st Anniversary（ももいろクローバー 1st Anniversary）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT2</p>
+                <p>第一部【1周年だョ！全員集合】，並且有安杏果參與其中之一開場表演，第二部【ももクロちゃんは止まらない！Let's run up together！】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=207" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+                <p>宣傳</p>
+                <p>
+                  <a href="https://youtu.be/bZ8aPiAn_l0" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">早見朱莉擔任【COMMERCIAL PHOTO 2009/6】封面拍攝</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B0026ZIEU0/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【福岡ソフトバンクホークス vs 千葉ロッテマリーンズ】日職開場演唱嘉賓</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：福岡．福岡ヤフードーム</p>
+                <p>跟著【ヤマダ電機】店長開球儀式活動，演唱曲目【桃色拳擊（ももいろパンチ）】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://youtu.be/zBNGXU29Ouo" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=173" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://garymomo2009.github.io/music?item=b2" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣播</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【天神FM「Park Side Cafe」】桃色幸運草登場</p>
+              </td>
+              <td>
+                <p>宣傳</p>
+                <p>
+                  <a href="https://youtu.be/I32J8g38GFk" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=154" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【BOMB 6月号】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B0026RB8JM" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス vol.004】，有安杏果所屬團體【PowerAge】一起參與</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT2</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=117" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>05月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【家電フェア2009 &amp; 大処分蚤の市 in パシフィコ横浜】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：神奈川．パシフィコ横浜</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=108" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【リバーサイドモール アイドル祭り】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：岐阜．リバーサイドモール</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php?ID=50" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【UTB vol.191】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.wani.co.jp/event.php?id=2195" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">桃色幸運草官方部落格開設</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://star-studio.jp/momoclo/index.php" target="_blank" class="btn btn-outline-momo-color btn-sm colorControl" role="button" title="Site">Site&nbsp;&#9752;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">桃色幸運草吉祥物【ももたん】誕生<img class="momo-momotan" src="image/icon/momotan.svg"></p>
+                <hr class="table-content-extra-line-ext">
+                <p>百田夏菜子的媽媽設計，多數決由玉井詩織命名的【ももたん】當選</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【B.L.T.PRESENTS Girls Woodstock Vol.11】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．SHIBUYA O-nest</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://finoliafactory.com/blt/090411.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【ピュアピュア Vol.53】，內含佐佐木彩夏介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/4777806375" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【中島愛スプリングイベント 2009】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．赤坂BLITZ</p>
+                <p>會前參與【中島愛】曲目【BeMySelf】企劃與【中島愛】合作曲目【BeMySelf】</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://natalie.mu/music/news/15140" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10238007419.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【春の川崎オーディション】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：神奈川．川崎アゼリア</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.oricon.co.jp/news/63886/full/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【PoP"n" Jam!! in YOKOHAMA】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：神奈川．新横浜SUNPHONIX HALL in YOKOHAMA ARENA</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10234756678.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>戲劇</p></td>
+              <td><p>04月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【日本テレビ「ショコラ ～愛される女 嫌われる女グランプリ～」】百田夏菜子參與演出</p>
+                <hr class="table-content-extra-line-ext">
+                <p>與桃草武士【（はんにゃ）金田哲】共演</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A7%E3%82%B3%E3%83%A9_(%E3%83%86%E3%83%AC%E3%83%93%E7%95%AA%E7%B5%84)" target="_blank" class="btn btn-outline-dark btn-sm" role="button" title="Wiki">Wiki&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>03月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス vol.003】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT1</p>
+                <p class="table-content-sub text-info">同年【ウラ☆フェス vol.1】【ウラ☆フェス vol.2】DVD發行</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10232819351.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>03月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">佐佐木彩夏小學畢業</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10227881059.html" target="_blank" class="btn btn-outline-momo-color btn-sm colorControl" role="button" title="Site">Site&nbsp;&#9752;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>03月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【B.L.T.PRESENTS Girls Woodstock Vol.10】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．竹芝BLACK room</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://finoliafactory.com/blt/090314.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>03月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">高城蕾妮中學畢業</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10223403793.html" target="_blank" class="btn btn-outline-momo-color btn-sm colorControl" role="button" title="Site">Site&nbsp;&#9752;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>事件</p></td>
+              <td><p>03月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">確認柏幸奈桃色幸運草離隊</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td><p>音樂</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">當時成員百田夏菜子、玉井詩織、高城蕾妮、伊倉愛美、和川ミユウ（和川未優）與早見朱莉一起參與團體【バーボンズ】單曲【絆】MV演出</p>
+              </td>
+              <td>
+                <p>MV</p>
+                <p>
+                  <a href="https://youtu.be/wyQkLhqR3_8" target="_blank" class="btn btn-outline-danger btn-sm" role="button" title="YouTube">YT&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス vol.002】，有安杏果所屬團體【PowerAge】一起參與</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT1</p>
+                <p>除了【NHK紅白歌合戦】出場宣言外，特別企劃由佐佐木彩夏與有安杏果等其他偶像一同演唱【中島愛】的【星間飛行】</p>
+                <p class="table-content-sub text-info">同年【ウラ☆フェス vol.1】【ウラ☆フェス vol.2】DVD發行</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10209408313.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【B.L.T.PRESENTS Girls Woodstock Vol.9】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．渋谷VUENOS TOKYO</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://finoliafactory.com/blt/090214.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">早見朱莉擔任【SDP Bunko 文学日和カレンダー】封面拍攝</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="http://www.stardustpictures.co.jp/book/2009/bunko4-.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【B.L.T. U-17 Vol.9】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/4863360401/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>02月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【ちゃお 3月号】，內含佐佐木彩夏介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.amazon.co.jp/dp/B001P5M9Y4/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>書報</p></td>
+              <td><p>01月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">【B.L.T. 3月号】，內含桃色幸運草介紹</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://www.fujisan.co.jp/product/2173/b/228943/" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>01月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【桃色幸運草 飯田橋RAMLA LIVE（ももいろクローバー 飯田橋ラムラライブ）】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．飯田橋ラムラ</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10194424258.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>活動</p></td>
+              <td><p>01月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">演唱【スタ☆フェス vol.001】</p>
+                <hr class="table-content-extra-line-ext">
+                <p class="table-content-sub text-muted">地點：東京．石丸電機SOFT1</p>
+                <p class="table-content-sub text-info">同年【ウラ☆フェス vol.1】【ウラ☆フェス vol.2】DVD發行</p>
+              </td>
+              <td>
+                <p>參考</p>
+                <p>
+                  <a href="https://ameblo.jp/schoolgirls/entry-10188138849.html" target="_blank" class="btn btn-outline-secondary btn-sm" role="button" title="Site">Site&#10097;&#10097;</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>廣告</p></td>
+              <td><p>01月</p></td>
+              <td>
+                <p class="table-content-title p-2 mx-2 rounded">早見朱莉參與【東京迪士尼】的【東京ディズニーシー 春のキャンパスデーパスポート】廣告演出</p>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+          </tbody>
+          <tfoot class="font-weight-bold momo-weight-color colorControl">
+            <tr>
+              <th>分類</th>
+              <th>月份</th>
+              <th>內容</th>
+              <th>備註</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-10 mt-5 text-center text-break">
+        <h6 class="font-weight-bold text-white">
+                  部分資料參考來源
+           <a class="text-decoration-none text-muted" href="http://www.momoclo.net/" target="_blank">『官網』</a>
+                 、
+           <a class="text-decoration-none text-muted" href="http://momoclozamurai.xxxblog.jp" target="_blank">『ももクロ侍』</a>
+                 、
+           <a class="text-decoration-none text-muted" href="http://momoirocloverz.blog.fc2.com/" target="_blank">『ももクロちゃんはじめました。』</a>
+                  、『台灣桃草武士團』
+        </h6>
+      </div>
+    </div>
+    <footer class="mt-auto">
+      <h6 class="text-center font-weight-bold text-white">
+        &nbsp;
+        <br/>桃色幸運草Z台灣武士製作
+        <br/>建議使用Chrome或Edge瀏覽器以達最佳瀏覽效果
+        <br/>本頁圖片來源：<a class="text-decoration-none text-muted" href="https://natalie.mu/" target="_blank">ナタリー</a>與網路搜尋
+      </h6>
+    </footer>
+  </div>
 </body>
 </html>
